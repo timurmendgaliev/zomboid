@@ -23,16 +23,23 @@ end
 addAttachment("SmallBeltLeft",  "Lantern", "Lantern Belt Left")
 addAttachment("SmallBeltRight", "Lantern", "Lantern Belt Right")
 
-local function ActivateModData()
-    -- BackpackAttachments
-    if getActivatedMods():contains("backpackattachments") then
-        addAttachment("Schoolbag",      "Lantern", "Lantern Schoolbag")
-        addAttachment("Hikingbag",      "Lantern", "Lantern Hikingbag")
-        addAttachment("HikingbagLeft",  "Lantern", "Lantern Hikingbag Left")
-        addAttachment("ALICEpackLeft",  "Lantern", "Lantern ALICEpack Left")
-        addAttachment("ALICEpack",      "Lantern", "Lantern ALICEpack")
-        addAttachment("ALICEpackRight", "Lantern", "Lantern ALICEpack Right")
+local function addBackpackSlots()
+    local slots = {
+        "Schoolbag",
+        "Hikingbag",
+        "HikingbagLeft",
+        "ALICEpackLeft",
+        "ALICEpack",
+        "ALICEpackRight",
+    }
+    for _, slot in ipairs(slots) do
+        addAttachment(slot, "Lantern", "Lantern " .. slot)
     end
+end
+
+local function ActivateModData()
+    -- базовые слоты рюкзаков (теперь доступны и без сторонних модов)
+    addBackpackSlots()
 
     -- Noir's backpack attachments / NATT
     if getActivatedMods():contains("noirbackpacksattachments")

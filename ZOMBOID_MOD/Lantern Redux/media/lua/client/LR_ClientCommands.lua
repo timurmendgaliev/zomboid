@@ -21,6 +21,7 @@ end
 
 function LR_Client_Commands.Toggle(worldObj, playerObj)
     if not worldObj or not instanceof(worldObj, "IsoWorldInventoryObject") then return end
+    if not playerObj then return end
 
     local square = worldObj:getSquare()
     if not square then return end
@@ -45,7 +46,7 @@ function LR_Client_Commands.Toggle(worldObj, playerObj)
     }
 
     -- одна единственная серверная команда
-    sendServerCommand("LR", "Toggle", args)
+    sendClientCommand(playerObj, "LR", "Toggle", args)
 end
 
 print("[LanternRedux] LR_ClientCommands.lua loaded (client)")

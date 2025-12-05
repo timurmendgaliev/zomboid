@@ -31,6 +31,9 @@ function LR_LanternLightObject:new(x, y, z, radius, color)
 end
 
 function LR_LanternLightObject:createLight()
+    -- dedicated server does not have client lighting classes
+    if not IsoLightSource or not IsoLightSource.new then return end
+
     local cell = getCell()
     if not cell then return end
 
@@ -54,8 +57,11 @@ function LR_LanternLightObject:createLight()
 
     sq:RecalcProperties()
     sq:RecalcAllWithNeighbours(true)
-    IsoGridSquare.RecalcLightTime = -1
-    getWorld():setLightingUpdate(true)
+    local world = getWorld()
+    if world then
+        IsoGridSquare.RecalcLightTime = -1
+        world:setLightingUpdate(true)
+    end
 end
 
 function LR_LanternLightObject:destroy()
@@ -120,7 +126,13 @@ local function LR_OnReceiveGlobalModData(key, data)
     LR_LR_refresh()
 end
 
+local function LR_requestModData()
+    ModData.request("LR_Lanterns")
+end
+
 Events.OnReceiveGlobalModData.Add(LR_OnReceiveGlobalModData)
+Events.OnConnected.Add(LR_requestModData)
+Events.OnGameStart.Add(LR_requestModData)
 Events.OnGameStart.Add(LR_LR_refresh)
 Events.OnLoad.Add(LR_LR_refresh)
 

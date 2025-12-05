@@ -9,15 +9,13 @@ local group = AttachedLocations.getGroup("Human")
 group:getOrCreateLocation("Lantern Belt Right"):setAttachmentName("lantern_belt_right")
 group:getOrCreateLocation("Lantern Belt Left"):setAttachmentName("lantern_belt_left")
 
--- BackpackAttachments
-if getActivatedMods():contains("backpackattachments") then
-    group:getOrCreateLocation("Lantern Schoolbag"):setAttachmentName("lantern_schoolbag")
-    group:getOrCreateLocation("Lantern Hikingbag"):setAttachmentName("lantern_hikingbag")
-    group:getOrCreateLocation("Lantern Hikingbag Left"):setAttachmentName("lantern_hikingbag_left")
-    group:getOrCreateLocation("Lantern ALICEpack Left"):setAttachmentName("lantern_alicepack_left")
-    group:getOrCreateLocation("Lantern ALICEpack"):setAttachmentName("lantern_alicepack")
-    group:getOrCreateLocation("Lantern ALICEpack Right"):setAttachmentName("lantern_alicepack_right")
-end
+-- Рюкзаки (доступны и без BackpackAttachments)
+group:getOrCreateLocation("Lantern Schoolbag"):setAttachmentName("lantern_schoolbag")
+group:getOrCreateLocation("Lantern Hikingbag"):setAttachmentName("lantern_hikingbag")
+group:getOrCreateLocation("Lantern Hikingbag Left"):setAttachmentName("lantern_hikingbag_left")
+group:getOrCreateLocation("Lantern ALICEpack Left"):setAttachmentName("lantern_alicepack_left")
+group:getOrCreateLocation("Lantern ALICEpack"):setAttachmentName("lantern_alicepack")
+group:getOrCreateLocation("Lantern ALICEpack Right"):setAttachmentName("lantern_alicepack_right")
 
 -- Noir's Backpack Attachments / NATT
 if getActivatedMods():contains("noirbackpacksattachments")
