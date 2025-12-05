@@ -1,0 +1,523 @@
+module Base
+{
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+		attachment lantern_belt_right
+		{
+			offset = 0.0000 -0.1060 0.0000,
+			rotate = 0.0000 0.0000 -69.0000,
+			bone = Bip01_Pelvis,
+		}
+
+		attachment lantern_belt_left
+		{
+			offset = 0.0000 0.1040 0.0000,
+			rotate = 0.0000 0.0000 -110.0000,
+			bone = Bip01_Pelvis,
+		}
+
+		attachment lantern_schoolbag
+		{
+			offset = 0.0970 -0.0010 -0.0410,
+			rotate = 90.0000 0.0000 10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_hikingbag
+		{
+			offset = 0.0930 -0.0010 -0.0010,
+			rotate = 90.0000 0.0000 10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_hikingbag_left
+		{
+			offset = 0.0270 0.1100 -0.0020,
+			rotate = 90.0000 -87.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack_left
+		{
+			offset = 0.1020 0.1000 -0.1000,
+			rotate = 90.0000 30.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack
+		{
+			offset = 0.1320 0.0000 -0.1000,
+			rotate = 90.0000 0.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack_right
+		{
+			offset = 0.1020 -0.1000 -0.1000,
+			rotate = 90.0000 -30.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment AA_lantern_noir_ANAT
+		{
+		    offset = 0.084 0.0 -0.237,
+		    rotate = 90.0 0.0 0.0,
+		    bone = Bip01_BackPack,
+		}
+
+        attachment AA_lantern_noir_ARVNRucksack
+        {
+            offset = 0.066 0.0 -0.131,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Alicepack
+        {
+            offset = 0.051 0.0 -0.108,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagBush
+        {
+            offset = 0.019 0.0 -0.108,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagCatPack
+        {
+            offset = 0.04 0.0 -0.229,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagHunting
+        {
+            offset = 0.044 0.0 -0.168,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagM2A1Pack
+        {
+            offset = 0.119 0.0 -0.212,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagRadioPack
+        {
+            offset = 0.022 0.0 -0.115,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSCBA
+        {
+            offset = 0.056 0.0 -0.229,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSSO
+        {
+            offset = 0.03 0.0 -0.145,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagST53Set
+        {
+            offset = 0.054 0.0 -0.246,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSavotta
+        {
+            offset = 0.039 0.0 -0.19,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSniperPack
+        {
+            offset = 0.084 0.0 -0.182,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagTacticalAlice
+        {
+            offset = 0.077 0.0 -0.224,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagZIP
+        {
+            offset = 0.033 0.0 -0.177,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BigHikingbag
+        {
+            offset = 0.025 0.0 -0.208,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_CFP90PatrolPack
+        {
+            offset = 0.044 0.0 -0.169,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_HR
+        {
+            offset = 0.032 0.0 -0.154,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Hikingbag
+        {
+            offset = 0.032 0.0 -0.169,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_MilitaryMedicalBag
+        {
+            offset = 0.046 0.0 -0.187,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_NomadBackpack
+        {
+            offset = 0.078 0.0 -0.297,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_PoliceUtilityBag
+        {
+            offset = 0.03 0.0 -0.146,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_RUKSAK1
+        {
+            offset = 0.049 0.0 -0.141,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_RUKSAK2
+        {
+            offset = 0.066 0.0 -0.145,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Rucksack
+        {
+            offset = 0.04 0.0 -0.218,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Schoolbag
+        {
+            offset = 0.032 0.0 -0.159,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_sBigSpiffoBackpack
+        {
+            offset = 0.053 0.0 -0.093,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+	}
+
+	model MaleBody
+	{
+		mesh = Skinned/MaleBody,
+
+		attachment lantern_belt_right
+		{
+			offset = 0.0000 -0.1060 0.0000,
+			rotate = 0.0000 0.0000 -69.0000,
+			bone = Bip01_Pelvis,
+		}
+
+		attachment lantern_belt_left
+		{
+			offset = 0.0000 0.1040 0.0000,
+			rotate = 0.0000 0.0000 -110.0000,
+			bone = Bip01_Pelvis,
+		}
+
+		attachment lantern_schoolbag
+		{
+			offset = 0.0970 -0.0010 -0.0410,
+			rotate = 90.0000 0.0000 10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_hikingbag
+		{
+			offset = 0.1190 0.0000 -0.0000,
+			rotate = 90.0000 0.0000 10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_hikingbag_left
+		{
+			offset = 0.0270 0.1100 -0.0020,
+			rotate = 90.0000 -87.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack_left
+		{
+			offset = 0.1020 0.1000 -0.1000,
+			rotate = 90.0000 30.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack
+		{
+			offset = 0.1320 0.0000 -0.1000,
+			rotate = 90.0000 0.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment lantern_alicepack_right
+		{
+			offset = 0.1020 -0.1000 -0.1000,
+			rotate = 90.0000 -30.0000 -10.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment AA_lantern_noir_ANAT
+		{
+		    offset = 0.084 0.0 -0.237,
+		    rotate = 90.0 0.0 0.0,
+		    bone = Bip01_BackPack,
+		}
+
+        attachment AA_lantern_noir_ARVNRucksack
+        {
+            offset = 0.066 0.0 -0.131,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Alicepack
+        {
+            offset = 0.051 0.0 -0.108,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagBush
+        {
+            offset = 0.019 0.0 -0.108,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagCatPack
+        {
+            offset = 0.04 0.0 -0.229,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagHunting
+        {
+            offset = 0.044 0.0 -0.168,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagM2A1Pack
+        {
+            offset = 0.119 0.0 -0.212,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagRadioPack
+        {
+            offset = 0.022 0.0 -0.115,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSCBA
+        {
+            offset = 0.056 0.0 -0.229,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSSO
+        {
+            offset = 0.03 0.0 -0.145,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagST53Set
+        {
+            offset = 0.054 0.0 -0.246,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSavotta
+        {
+            offset = 0.039 0.0 -0.19,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagSniperPack
+        {
+            offset = 0.084 0.0 -0.182,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagTacticalAlice
+        {
+            offset = 0.077 0.0 -0.224,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BagZIP
+        {
+            offset = 0.033 0.0 -0.177,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_BigHikingbag
+        {
+            offset = 0.025 0.0 -0.208,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_CFP90PatrolPack
+        {
+            offset = 0.044 0.0 -0.169,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_HR
+        {
+            offset = 0.032 0.0 -0.154,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Hikingbag
+        {
+            offset = 0.032 0.0 -0.169,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_MilitaryMedicalBag
+        {
+            offset = 0.046 0.0 -0.187,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_NomadBackpack
+        {
+            offset = 0.078 0.0 -0.297,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_PoliceUtilityBag
+        {
+            offset = 0.03 0.0 -0.146,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_RUKSAK1
+        {
+            offset = 0.049 0.0 -0.141,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_RUKSAK2
+        {
+            offset = 0.066 0.0 -0.145,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Rucksack
+        {
+            offset = 0.04 0.0 -0.218,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_Schoolbag
+        {
+            offset = 0.032 0.0 -0.159,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+
+        attachment AA_lantern_noir_sBigSpiffoBackpack
+        {
+            offset = 0.053 0.0 -0.093,
+            rotate = 90.0 0.0 0.0,
+            bone = Bip01_BackPack,
+        }
+	}
+	model SL_Lantern
+	{
+		mesh = SL_Lantern,
+		texture = SL_Lantern,
+	}
+	model SL_Lantern_World
+    {
+        mesh = WorldItems/SL_Lantern,
+        texture = SL_Lantern,
+    }
+
+	model SL_GasLantern
+	{
+		mesh = SL_Lantern,
+		texture = SL_GasLantern,
+	}
+	model SL_GasLantern_World
+    {
+        mesh = WorldItems/SL_Lantern,
+        texture = SL_GasLantern,
+    }
+}

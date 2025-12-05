@@ -1,0 +1,4 @@
+ContextMenu_EN = {
+    ContextMenu_Insert_Battery = "Insert Battery",
+    ContextMenu_Add_Gasoline = "Add Gasoline",
+}

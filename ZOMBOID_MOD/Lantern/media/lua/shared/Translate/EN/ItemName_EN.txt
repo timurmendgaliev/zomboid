@@ -1,0 +1,4 @@
+ItemName_EN = {
+    ItemName_LTN_SL.Lantern = "Electric Lantern",
+    ItemName_LTN_SL.GasLantern = "Gas Lantern",
+}

@@ -1,0 +1,4 @@
+ItemName_ES = {
+    ItemName_Base.Lantern = "Linterna",
+    ItemName_Base.GasLantern = "Linterna de gas",
+}

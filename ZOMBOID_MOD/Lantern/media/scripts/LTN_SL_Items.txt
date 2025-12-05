@@ -1,0 +1,55 @@
+module LTN_SL
+{   
+    imports
+    {
+        Base
+    }
+    
+    item Lantern
+    {
+        DisplayCategory = LightSource,
+        LightDistance	=	15,
+        Weight	=	0.5,
+        DisappearOnUse	=	FALSE,
+        Type	=	Drainable,
+        TorchCone	=	FALSE,
+        UseDelta	=	0.0002,
+        LightStrength	=	1.5,
+        TorchDot = 0.66,
+        DisplayName	= Electric Lantern,
+        ActivatedItem	=   TRUE,
+        Icon	=	SL_Lantern,
+        Tooltip = Tooltip_SL_Lantern,
+        MetalValue = 10,
+        cantBeConsolided = TRUE,
+        StaticModel = SL_Lantern,
+        WorldStaticModel = SL_Lantern_World,
+        AttachmentType = Lantern,
+        primaryAnimMask = HoldingUmbrellaRight,
+        secondaryAnimMask = HoldingUmbrellaLeft,
+    }
+    
+    item GasLantern
+    {
+        DisplayCategory = LightSource,
+        LightDistance	=	10,
+        Weight	=	.75,
+        DisappearOnUse	=	FALSE,
+        Type	=	Drainable,
+        TorchCone	=	FALSE,
+        UseDelta	=	0.0001,
+        LightStrength	=	1,
+        TorchDot = 0.5,
+        DisplayName	=   Gas Lantern,
+        ActivatedItem	=   TRUE,
+        Icon	=	SL_GasLantern,
+        Tooltip = Tooltip_SL_GasLantern,
+        MetalValue = 10,
+        cantBeConsolided = TRUE,
+        StaticModel = SL_GasLantern,
+        WorldStaticModel = SL_GasLantern_World,
+        AttachmentType = Lantern,
+        primaryAnimMask = HoldingUmbrellaRight,
+        secondaryAnimMask = HoldingUmbrellaLeft,
+    }
+}

@@ -1,0 +1,4 @@
+Recipes_RU = {
+    Recipe_Insert_Battery_into_Lantern = "Вставьте батарею в фонарь",
+    Recipe_Add_Gas_into_Lantern = "Заправить газовый фонарь",
+}

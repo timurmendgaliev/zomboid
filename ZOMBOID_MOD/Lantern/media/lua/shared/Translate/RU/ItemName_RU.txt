@@ -1,0 +1,4 @@
+ItemName_RU = {
+    ItemName_Base.Lantern = "Фонарь",
+    ItemName_Base.GasLantern = "Газовый фонарь",
+}

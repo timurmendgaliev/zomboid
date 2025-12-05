@@ -1,0 +1,4 @@
+﻿Tooltip_ES = {
+    Tooltip_SL_Lantern = "Una linterna alimentada por batería. Requiere batería en inventario para recargar cuando se agota."
+	Tooltip_SL_GasLantern = "Una linterna a gas. Requiere gasolina en inventario para recargar cuando se drena."
+}

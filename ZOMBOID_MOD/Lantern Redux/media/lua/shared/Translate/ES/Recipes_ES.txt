@@ -1,0 +1,4 @@
+Recipes_ES = {
+    Recipe_Insert_Battery_into_Lantern = "Inserte la batería en la linterna",
+    Recipe_Add_Gas_into_Lantern = "Linterna de gas de recarga",
+}

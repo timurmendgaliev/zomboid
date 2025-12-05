@@ -1,0 +1,9 @@
+name=Lantern Redux
+id=LanternRedux
+modId=LanternRedux
+poster=poster.png
+description=Standalone lanterns with working ground light. Compatible with Sapphire's Heaters.
+
+lua=shared/
+lua=client/
+lua=server/

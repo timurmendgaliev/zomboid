@@ -1,0 +1,77 @@
+module LanternRedux
+{
+    imports
+    {
+        Base
+    }
+
+    item LR_BatteryLantern
+    {
+        DisplayCategory     = LightSource,
+        DisplayName         = Battery Lantern,
+        Icon                = LR_BatteryLantern,
+
+        Weight              = 1.5,
+        Type                = Drainable,
+        DisappearOnUse      = FALSE,
+        UseDelta            = 0.0002,
+
+        IsLight             = TRUE,
+        TorchCone           = FALSE,
+        TorchDot            = 0.66,
+        LightDistance       = 15,
+        LightStrength       = 0.9,
+        ActivatedItem       = TRUE,
+
+        ConditionMax        = 100,
+        cantBeConsolided    = TRUE,
+
+        StaticModel         = SL_Lantern,
+        WorldStaticModel    = SL_Lantern_World,
+
+        AttachmentType      = Lantern,
+
+        CanBeEquipped       = Belt,
+        BodyLocation        = Belt Right,
+        AllowHotbar         = TRUE,
+
+        primaryAnimMask     = HoldingUmbrellaRight,
+        secondaryAnimMask   = HoldingUmbrellaLeft,
+        TwoHandWeapon       = FALSE,
+    }
+
+    item LR_GasLantern
+    {
+        DisplayCategory     = LightSource,
+        DisplayName         = Gas Lantern,
+        Icon                = LR_GasLantern,
+
+        Weight              = 1.5,
+        Type                = Drainable,
+        DisappearOnUse      = FALSE,
+        UseDelta            = 0.0002,
+
+        IsLight             = TRUE,
+        TorchCone           = FALSE,
+        TorchDot            = 0.66,
+        LightDistance       = 20,
+        LightStrength       = 1.1,
+        ActivatedItem       = TRUE,
+
+        ConditionMax        = 100,
+        cantBeConsolided    = TRUE,
+
+        StaticModel         = SL_GasLantern,
+        WorldStaticModel    = SL_GasLantern_World,
+
+        AttachmentType      = Lantern,
+
+        CanBeEquipped       = Belt,
+        BodyLocation        = Belt Right,
+        AllowHotbar         = TRUE,
+
+        primaryAnimMask     = HoldingUmbrellaRight,
+        secondaryAnimMask   = HoldingUmbrellaLeft,
+        TwoHandWeapon       = FALSE,
+    }
+}

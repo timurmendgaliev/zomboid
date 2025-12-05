@@ -1,0 +1,4 @@
+ContextMenu_RU = {
+    ContextMenu_Insert_Battery = "Вставьте батарею",
+    ContextMenu_Add_Gasoline = "Добавить бензин",
+}

@@ -1,0 +1,29 @@
+module LanternRedux
+{
+    imports
+    {
+        Base
+    }
+
+    recipe Disassemble Battery Lantern
+    {
+        LanternRedux.LR_BatteryLantern,
+        keep Screwdriver,
+        Result:ElectronicsScrap,
+        Time:40.0,
+        Category:Electricity,
+        SkillRequired:Electricity=1,
+        OnCreate:LR_OnCreate_DisassembleBatteryLantern,
+    }
+
+    recipe Disassemble Gas Lantern
+    {
+        LanternRedux.LR_GasLantern,
+        keep Screwdriver,
+        Result:ElectronicsScrap,
+        Time:40.0,
+        Category:Metalwork,
+        SkillRequired:MetalWelding=1,
+        OnCreate:LR_OnCreate_DisassembleGasLantern,
+    }
+}

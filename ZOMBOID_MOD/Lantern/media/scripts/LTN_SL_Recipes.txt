@@ -1,0 +1,101 @@
+module Base
+{
+    recipe Remove Lantern Battery
+    {
+        keep LTN_SL.Lantern,
+
+        Result:Battery,
+        Time:30,
+        OnTest:Recipe.OnTest.TorchBatteryRemoval,
+        OnCreate:Recipe.OnCreate.LanternBatteryRemoval,
+    }
+
+    recipe Insert Battery into Lantern
+    {
+        destroy LTN_SL.Lantern,
+        destroy Battery,
+
+        Result:LTN_SL.Lantern,
+        Time:30,
+        OnTest:Recipe.OnTest.LanternBatteryInsert,
+        OnCreate:Recipe.OnCreate.TorchBatteryInsert,
+    }
+    
+    recipe Refill Gas Lantern
+    {
+       destroy LTN_SL.GasLantern=1,
+       PetrolCan/WaterBottlePetrol=1,
+       
+       Result:LTN_SL.GasLantern,
+       Time:50.0,
+       OnTest:Recipe.OnTest.GasLanternRefill,
+    }
+
+    recipe Craft Lantern
+    {
+       destroy ElectronicsScrap=2,
+       destroy LightBulb,
+       destroy Aluminum=2,
+       destroy Battery,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:LTN_SL.Lantern,
+       Time:100.0,
+       OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Sound:Dismantle,
+    }
+
+    recipe Dismantle Lantern
+    {
+       destroy LTN_SL.Lantern,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:100.0,
+       OnCreate:Recipe.OnCreate.DismantleLantern,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Sound:Dismantle,
+    }
+    
+    recipe Craft Gas Lantern
+    {
+       destroy ElectronicsScrap=2,
+       destroy LightBulb,
+       destroy Aluminum=2,
+       destroy Battery,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:LTN_SL.GasLantern,
+       Time:100.0,
+       OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Sound:Dismantle,
+    }
+
+    recipe Dismantle Gas Lantern
+    {
+       destroy LTN_SL.GasLantern,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:100.0,
+       OnCreate:Recipe.OnCreate.DismantleLantern,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Sound:Dismantle,
+    }
+}
